@@ -4,6 +4,17 @@
 
 set -euo pipefail
 
+# ==== Dependency check ====
+command -v toilet >/dev/null 2>&1 || {
+  echo "📦 Installing toilet..."
+  pkg install toilet -y
+}
+
+command -v figlet >/dev/null 2>&1 || {
+  echo "📦 Installing figlet..."
+  pkg install figlet -y
+}
+
 BANNER_FILE="${HOME}/.config/termux-banner.sh"
 mkdir -p "$(dirname "$BANNER_FILE")"
 
@@ -344,7 +355,7 @@ show_random_banner () {
 # Tanggal
 show_date () {
   local hari tgl bln thn
-  hari=$(date +"A")
+  hari=$(date +"%A")
   tgl=$(date +"%d")
   bln=$(date +"%m")
   thn=$(date +"%Y")
@@ -353,7 +364,7 @@ show_date () {
 }
 
 # Ambil nama dari file
-USER_NAME=$(<"${HOME}/.config/termux-name.txt")
+USER_NAME=$(cat "${HOME}/.config/termux-name.txt" 2>/dev/null || echo "User")
 
 # Run
 show_random_banner
