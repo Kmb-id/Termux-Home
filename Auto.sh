@@ -43,7 +43,7 @@ if [[ -f "$NAME_FILE" ]]; then
 OLD_NAME=$(<"$NAME_FILE")
 echo -e "${WHITE}*  Prompt untuk PS1  *"
 echo -e "${YELLOW}✅ NickName Tersimpan: ${CYAN}$OLD_NAME\n"
-echo -e "${NC}⚠️ Apakah ada ingin mengganti NickName ???\n  Jika tidak lanjut ${GREEN}[Enter]${NC} saja . \n${PURPLE}👉 NickName New: ${NC} \c"
+echo -e "${NC}⚠️ Apakah Ingin Mengganti NickName ???\n  Jika tidak lanjut ${GREEN}[Enter]${NC} saja . \n${PURPLE}👉 NickName New: ${NC} \c"
 read -r USER_NAME
 if [[ -z "$USER_NAME" ]]; then
 USER_NAME="$OLD_NAME"
