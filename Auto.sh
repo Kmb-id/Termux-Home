@@ -352,15 +352,42 @@ show_random_banner () {
   "banner_$pick" | gradient_print
 }
 
-# Tanggal
+# TANGGAL (DATE)
 show_date () {
-  local hari tgl bln thn
-  hari=$(date +"%A")
+  local hari bln tgl thn
+
+  case $(date +%A) in
+    Sunday) hari="Minggu" ;;
+    Monday) hari="Senin" ;;
+    Tuesday) hari="Selasa" ;;
+    Wednesday) hari="Rabu" ;;
+    Thursday) hari="Kamis" ;;
+    Friday) hari="Jum'at" ;;
+    Saturday) hari="Sabtu" ;;
+  esac
+
+  case $(date +%m) in
+    01) bln="Januari" ;;
+    02) bln="Februari" ;;
+    03) bln="Maret" ;;
+    04) bln="April" ;;
+    05) bln="Mei" ;;
+    06) bln="Juni" ;;
+    07) bln="Juli" ;;
+    08) bln="Agustus" ;;
+    09) bln="September" ;;
+    10) bln="Oktober" ;;
+    11) bln="November" ;;
+    12) bln="Desember" ;;
+  esac
+
   tgl=$(date +"%d")
-  bln=$(date +"%m")
   thn=$(date +"%Y")
-  printf "\e[2;90m";figlet -f term -c -t "Powered by L4EROOR/KMB\n Version : 0.3"
-  echo -e "\n\033[1;91m        ╼═\033[94m☾ \033[93mDATE\033[95m: \033[4;97m$hari\e[0m\033[94m , \033[4;92m$tgl\e[0m\033[95m-\033[4;92m$bln\e[0m\033[95m-\033[4;92m$thn\e[0m\033[94m ☽\033[91m═╾"
+
+  printf "\e[2;90m"
+  figlet -f term -c -t "Powered by L4EROOR/KMB\n Version : 0.3"
+
+  echo -e "\n\033[1;91m        ╼═\033[94m☾ \033[93mDATE\033[95m: \033[4;97m$hari\e[0m\033[94m , \033[4;92m$tgl\e[0m\033[95m \033[4;96m$bln\e[0m\033[95m \033[4;92m$thn\e[0m\033[94m ☽\033[91m═╾"
 }
 
 # Ambil nama dari file
