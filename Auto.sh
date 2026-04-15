@@ -92,7 +92,7 @@ center_gradient_print() {
     (( len > max_len )) && max_len=$len
   done
 
-  # Dapatkan lebar terminal (default 45 jika gagal)
+  # Dapatkan lebar terminal (default 80 jika gagal)
   local term_width=$(tput cols 2>/dev/null || echo 45)
   local padding=0
   if (( max_len < term_width )); then
@@ -407,7 +407,7 @@ show_date () {
   thn=$(date +"%Y")
 
   printf "\e[2;90m"
-  figlet -f term -c -t "Powered by L4EROOR/KMB\n Version : 0.3"
+  figlet -f term -c -t "Powered by L4EROOR / KMB.ID"
 
   echo -e "\n\033[1;91m        ╼═\033[94m☾ \033[93mDATE\033[95m: \033[4;97m$hari\e[0m\033[94m , \033[4;92m$tgl\e[0m\033[95m \033[4;96m$bln\e[0m\033[95m \033[4;92m$thn\e[0m\033[94m ☽\033[91m═╾"
 }
@@ -443,4 +443,4 @@ echo -e "✅ Banner "
 echo -e "✅ Date Info "
 echo -e "✅ Nickname : \e[92m(${USER_NAME})"
 echo
-echo -e "\e[93m Buka ulang Termux untuk melihat hasil.\e[00m"
+echo -e "\e[93m Buka ulang Termux untuk melihat hasil.\n Atau langsung ketik perintah :\e[91m source ~/.bashrc\e[0m"
