@@ -1,24 +1,26 @@
-# Auto-Thema TERMUX
+<h1 align="center">$$\color{RED} TERMUX➖HOME $$
+</h1>
+
 - Merubah tampilan termux secara Automatis
   (setiap buka termux bannernya berubah auto berbeda-beda)
 ```
-git clone https://github.com/Kmb-id/Auto-Thema/tree/main
+git clone https://github.com/Kmb-id/Termux-Home
 ```
 ```
-cd Auto-Thema
+cd Termux-Home
 ```
 ```
-chmod +x *
+chmod +x Auto.sh
 ```
 - Running 
 ```
-bashAuto.sh 
+bash Auto.sh 
 ```
-atau
-```
-./Auto.sh
-```
-- Hasilnya setiap buka termux tampilan akan berubah-ubah (random) 
+
+# DEMO RESULT
+- Hasilnya setiap buka termux tampilan akan berubah-ubah (random)
+- Cek [RESULT](https://github.com/Kmb-id/Termux-Home/blob/main/Demo)
+  
 # Cara Hapus installation script
 - 1
   ```
