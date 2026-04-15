@@ -2,27 +2,10 @@
 # Termux Colorful ASCII Banner + Clear + Date + Nama di PS1
 # Installer script — run sekali, tiap run bisa ganti nama (ENTER = pakai nama lama)
 
+clear
 set -euo pipefail
 
-# ==== Dependency check ====
-command -v toilet >/dev/null 2>&1 || {
-  echo "📦 Installing toilet..."
-  pkg install toilet -y
-}
-
-command -v figlet >/dev/null 2>&1 || {
-  echo "📦 Installing figlet..."
-  pkg install figlet -y
-}
-
-BANNER_FILE="${HOME}/.config/termux-banner.sh"
-mkdir -p "$(dirname "$BANNER_FILE")"
-
-# ==== Input nama tiap kali run ====
-NAME_FILE="${HOME}/.config/termux-name.txt"
-
-# Warna untuk prompt
-
+# === WARNA ===
 RED='\033[1;91m'
 GREEN='\033[1;92m'
 YELLOW='\033[1;93m'
@@ -32,6 +15,24 @@ CYAN='\033[1;96m'
 WHITE='\033[1;97m'
 NC='\033[0m'
 
+# ==== Dependency check ====
+command -v toilet >/dev/null 2>&1 || {
+  echo -e "${GREEN}📦 Installing ${YELLOW}toilet...${NC}"
+  pkg install toilet -y
+}
+
+command -v figlet >/dev/null 2>&1 || {
+  echo -e "${GREEN}📦 Installing ${YELLOW}figlet...${NC}"
+  pkg install figlet -y
+}
+
+BANNER_FILE="${HOME}/.config/termux-banner.sh"
+mkdir -p "$(dirname "$BANNER_FILE")"
+
+# ==== Input nama tiap kali run ====
+NAME_FILE="${HOME}/.config/termux-name.txt"
+
+# TAMPILAN MENU AWAL
 clear
 echo -e "${CYAN}╔════════════════════════════════════╗${NC}"
 echo -e "${CYAN}║  ⚙️ TERMUX THEMA STYLING V 0.3  🛠️   ║${NC}"
@@ -68,7 +69,7 @@ esac
 clear
 
 # ==== Gradient Printer ====
-gradient_print () {
+center_gradient_print() {
   local -a PALETTES=(
     "196 202 208 214 220 190 154 118 82 46 47 48 49 51 39 27 21 57 93 129 165 201"
     "201 198 200 129 93 57 21 27 39 45 51 50 49 48 47 46 82 118 154 190 220 214 208"
@@ -78,10 +79,31 @@ gradient_print () {
   local pick=$((RANDOM % ${#PALETTES[@]}))
   local COLORS=( ${PALETTES[$pick]} )
 
-  local i=0 line
+  # Baca semua baris banner ke dalam array
+  local lines=()
   while IFS= read -r line; do
+    lines+=("$line")
+  done
+
+  # Cari panjang baris terpanjang (tanpa kode ANSI)
+  local max_len=0
+  for line in "${lines[@]}"; do
+    local len=${#line}
+    (( len > max_len )) && max_len=$len
+  done
+
+  # Dapatkan lebar terminal (default 45 jika gagal)
+  local term_width=$(tput cols 2>/dev/null || echo 45)
+  local padding=0
+  if (( max_len < term_width )); then
+    padding=$(( (term_width - max_len) / 2 ))
+  fi
+
+  # Cetak setiap baris dengan padding dan gradien
+  local i=0
+  for line in "${lines[@]}"; do
     local c=${COLORS[$(( i % ${#COLORS[@]} ))]}
-    printf "\033[38;5;%sm%s\033[0m\n" "$c" "$line"
+    printf "\033[38;5;%sm%*s%s\033[0m\n" "$c" "$padding" "" "$line"
     i=$((i+1))
   done
 }
@@ -349,7 +371,7 @@ ART
 show_random_banner () {
   local banners=(satan oyen garuda onepiece hydrag skull spider dragon butterfly anonym)
   local pick=${banners[RANDOM % ${#banners[@]}]}
-  "banner_$pick" | gradient_print
+  "banner_$pick" | center_gradient_print
 }
 
 # TANGGAL (DATE)
