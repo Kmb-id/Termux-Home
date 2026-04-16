@@ -1,5 +1,5 @@
 <p align="center">
-  <strong style="font-size: 24px;">$$\color{GREEN}👐WELCOME 👐$$</strong></p>
+  <strong style="font-size: 30px;">$$\color{GREEN}👐WELCOME 👐$$</strong></p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Banner"/>
@@ -24,11 +24,14 @@
   </a>
 </p>
 
-<h1 align="center">$$\color{RED} TERMUX➖HOME $$
-</h1>
+<h1 align="center">$$\color{RED} TERMUX➖HOME $$</h1>
+- Mengubah tampilan Termux secara Automatic
+  
+$$\color{CYAN}\text{(Setiap Buka Termux, Logo Bannernya Berubah-ubah }$$$$\color{CYAN}\text{ Secara Automatis dengan warna-warni.)}$$
 
-- Merubah tampilan termux secara Automatis
-  (setiap buka termux bannernya berubah auto berbeda-beda)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Banner"/>
+</p>
 
 # STEP 1
 - Install package git
@@ -58,7 +61,7 @@ bash Auto.sh
 # Cara Hapus installation script
 - STEP 1
   ```
-  cd ~;rm -rf Auto-Thema
+  cd ~;rm -rf Termux-Home
   ```
 - STEP 2
   ```
@@ -68,5 +71,5 @@ bash Auto.sh
 # Gabut
 - 🤣
   - Enjoyin aja lah....!!!
-    - 28 agst 2025
+    - 28 Agst 2025
     - update 16 April 2026
