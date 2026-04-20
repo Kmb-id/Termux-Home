@@ -24,8 +24,13 @@
   </a>
 </p>
 
-<h1 align="center">$$\color{RED} TERMUX➖HOME $$</h1>
-- Mengubah tampilan Termux secara Automatic
+<h1 align="center">$$\color{RED} TERMUX➖THEME $$</h1>
+
+$$\color{GREEN}\text{🎨Custom Banner Automatis untuk Termux dengan:}$$
+- Random ASCII Art
+- Gradient color
+- Tanggal otomatis
+- Custom nickname (PS1)
   
 $$\color{CYAN}\text{(Setiap Buka Termux, Logo Bannernya Berubah-ubah }$$$$\color{CYAN}\text{ Secara Automatis dengan warna-warni.)}$$
 
@@ -33,38 +38,40 @@ $$\color{CYAN}\text{(Setiap Buka Termux, Logo Bannernya Berubah-ubah }$$$$\color
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Banner"/>
 </p>
 
-# STEP 1
+# ⚙️ Install
+
+### STEP 1
 - Install package git
   - ```pkg install git -y```
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+pkg+install+git;pkg+install+git+-y+👍" alt="Typing SVG" />
 </p>
 
-# STEP 2
+### STEP 2
 ```
 git clone https://github.com/Kmb-id/Termux-Home
 ```
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+git+clone;https://+github.com/;Kmb-id+/Termux-Home+👍" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+git+clone;https://+github.com/;Kmb-id+/Termux-Home.git+👍" alt="Typing SVG" />
 </p>
 
 ```
-cd Termux-Home
+cd Termux-Theme
 ```
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=200&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+cd+Termux-Home;cd+Termux-Home+👍" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=200&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+cd+Termux-Theme;cd+Termux-Theme+👍" alt="Typing SVG" />
 </p>
 
 ```
-chmod +x Auto.sh
+chmod +x install.sh
 ```
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=300&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+chmod++x+Auto.sh;chmod++x+Auto.sh+👍" alt="Typing SVG" />
 </p>
 
-# STEP 3 (Running)
+### STEP 3 (Running)
 ```
-bash Auto.sh 
+bash install.sh 
 ```
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=400&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+bash+Auto.sh;bash+Auto.sh+👍" alt="Typing SVG" />
