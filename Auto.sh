@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Termux Banner Theme Installer
+# Author : L4EROOR/KMB.ID
+# Version: 0.3
 # Termux Colorful ASCII Banner + Clear + Date + Nama di PS1
 # Installer script — run sekali, tiap run bisa ganti nama (ENTER = pakai nama lama)
 
