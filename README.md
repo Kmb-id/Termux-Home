@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2CA5E0&center=true&vCenter=true&width=435&lines=Welcome+to+my+profile!;I'm+L4EROOR;or+KMB+.+ID;Always+learning+new+things" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=E67E22&center=true&vCenter=true&width=435&lines=Welcome+to+my+profile!;I'm+L4EROOR;or+KMB+.+ID;Always+learning+new+things" alt="Typing SVG"/>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
   </a>
 </p>
 
-<h1 align="center">$$\color{RED} TERMUX➖THEME $$</h1>
+<h1 align="center">$$\color{RED} BANNER➖TERMUX $$</h1>
 
 $$\color{GREEN}\text{🎨Custom Banner Automatis untuk Termux dengan:}$$
 - Random ASCII Art
@@ -32,10 +32,8 @@ $$\color{GREEN}\text{🎨Custom Banner Automatis untuk Termux dengan:}$$
 - Tanggal otomatis
 - Custom nickname (PS1)
   
-$$\color{CYAN}\text{(Setiap Buka Termux, Logo Bannernya Berubah-ubah }$$$$\color{CYAN}\text{ Secara Automatis dengan warna-warni.)}$$
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Banner"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=1ABC9C&center=true&vCenter=true&width=435&lines=Setiap+Buka+Termux;Logo+Bannernya+Berubah-ubah.;Secara+Automatis+dan+warna-warni." alt="Typing SVG"/>
 </p>
 
 # ⚙️ Install
@@ -49,24 +47,24 @@ $$\color{CYAN}\text{(Setiap Buka Termux, Logo Bannernya Berubah-ubah }$$$$\color
 
 ### STEP 2
 ```
-git clone https://github.com/Kmb-id/Termux-Home
+git clone https://github.com/Kmb-id/banner-termux.git
 ```
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+git+clone;https://+github.com/;Kmb-id+/Termux-Home.git+👍" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=100&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+git+clone;https://+github.com/;Kmb-id+/banner-termux.git+👍" alt="Typing SVG" />
 </p>
 
 ```
-cd Termux-Theme
+cd banner-termux
 ```
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=200&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+cd+Termux-Theme;cd+Termux-Theme+👍" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=200&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+cd+banner-termux;cd+banner-termux+👍" alt="Typing SVG" />
 </p>
 
 ```
 chmod +x install.sh
 ```
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=300&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+chmod++x+Auto.sh;chmod++x+Auto.sh+👍" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=300&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+chmod++x+install.sh;chmod++x+install.sh+👍" alt="Typing SVG" />
 </p>
 
 ### STEP 3 (Running)
@@ -74,7 +72,7 @@ chmod +x install.sh
 bash install.sh 
 ```
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=400&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+bash+Auto.sh;bash+Auto.sh+👍" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=400&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+bash+install.sh;bash+install.sh+👍" alt="Typing SVG" />
 </p>
 
 <h1 align="center">$$\color{BLUE} DEMO🔹RESULT $$
@@ -83,15 +81,14 @@ bash install.sh
 - Hasilnya setiap buka termux tampilan akan berubah-ubah (random)
 - Cek 👉 [RESULT](https://github.com/Kmb-id/Termux-Home/blob/main/Demo)
   
-# Cara Hapus installation script
-- STEP 1
+# UNINSTALL 
+- 
   ```
-  cd ~;rm -rf Termux-Home
+  bash uninstall.sh
   ```
-- STEP 2
-  ```
-  cd ~;rm -rf .bashrc .config
-  ```
+  <p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=500&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+bash+uninstall.sh;bash+uninstall.sh+👍" alt="Typing SVG" />
+</p>
 
 # Gabut
 - 🤣
