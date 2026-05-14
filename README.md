@@ -1,9 +1,4 @@
-<p align="center">
-  <strong style="font-size: 30px;">$$\color{GREEN}👐WELCOME 👐$$</strong></p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Banner"/>
-</p>
+<h1 align="center">$$\color{GREEN}👐WELCOME 👐$$</h1>
 
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/44727800?v=4" width="150" height="150" style="border-radius: 50%;"/>
@@ -22,15 +17,18 @@
   <a href="https://t.me/L4EROOR_OFFICIAL" target="_blank">
     <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
   </a>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="Banner"/>
 </p>
 
 <h1 align="center">$$\color{RED} BANNER➖TERMUX $$</h1>
 
-$$\color{GREEN}\text{🎨Custom Banner Automatis untuk Termux dengan:}$$
-- Random ASCII Art
-- Gradient color
-- Tanggal otomatis
-- Custom nickname (PS1)
+$$\color{GREEN}\text{🎨Custom Banner Automatis untuk Termux :}$$
+  - Random ASCII Art
+  - Gradient color
+  - Tanggal otomatis
+  - Custom nickname (PS1)
   
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=1ABC9C&center=true&vCenter=true&width=435&lines=Setiap+Buka+Termux;Logo+Bannernya+Berubah-ubah.;Secara+Automatis+dan+warna-warni." alt="Typing SVG"/>
@@ -81,7 +79,7 @@ bash install.sh
 - Hasilnya setiap buka termux tampilan akan berubah-ubah (random)
 - Cek 👉 [RESULT](https://github.com/Kmb-id/Termux-Home/blob/main/Demo)
   
-# UNINSTALL 
+# 📵 UNINSTALL 
 - 
   ```
   bash uninstall.sh
@@ -90,8 +88,8 @@ bash install.sh
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=500&color=2CA5E0&center=true&vCenter=true&width=435&lines=👉+bash+uninstall.sh;bash+uninstall.sh+👍" alt="Typing SVG" />
 </p>
 
-# Gabut
-- 🤣
-  - Enjoyin aja lah....!!!
-    - 28 Agst 2025
-    - update 16 April 2026
+## Notes
+- Project dibuat untuk fun dan customization Termux.
+  - 🤣
+    - Enjoy-in aja lah....!!!
+      - 🙏
